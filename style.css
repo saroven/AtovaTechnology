@@ -126,6 +126,7 @@ nav {
    align-items: center;
    background-position: center;
    background-repeat: no-repeat;
+   /* background-size: ; */
 }
 .hero .hero-content {
    display: flex;
@@ -263,7 +264,7 @@ nav {
       border-left: 1px solid #ededed;
    }
    .hero .hero-search .hero-input input {
-      padding: 20px 38px;
+      padding: 20px 30px;
    }
    .hero .hero-search .hero-input button {
       border: none;
