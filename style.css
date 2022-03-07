@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500;700&display=swap");
 /* global css */
 * {
    margin: 0;
@@ -115,6 +115,7 @@ nav {
 /* hero section */
 
 .hero {
+   position: relative;
    min-height: calc(100vh - 122px);
    background: linear-gradient(
          to right,
@@ -215,6 +216,69 @@ nav {
    background: #ff555a;
    border-radius: 10px;
 }
+/* count section */
+
+.count-section {
+   position: absolute;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%, -50%);
+   width: 70%;
+   margin: 0 auto;
+   background: #ffffff;
+   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+}
+.count-section .items {
+   display: flex;
+   padding: 20px;
+}
+.count-section .items .item {
+   display: flex;
+   justify-content: space-between;
+}
+.count-section .items .item .icon-container .circle {
+   background: #f1f1f1;
+   box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+   width: 76px;
+   height: 75.74px;
+   border-radius: 50%;
+   position: relative;
+}
+.count-section .items .item .icon-container .icon {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+.item .content {
+   align-items: flex-start;
+   margin-left: 15px;
+}
+.item-number {
+   font-weight: 500;
+   line-height: 20px;
+   text-transform: uppercase;
+   color: #ef3f24;
+}
+.item-heading {
+   font-family: "Roboto", sans-serif;
+   font-weight: 500;
+   font-size: 13px;
+   text-transform: uppercase;
+   color: #ff555a;
+}
+.item-body {
+   font-family: "Montserrat", sans-serif;
+   font-size: 11px;
+   line-height: 13px;
+   color: #000000;
+}
+/* our course section */
+.course-section {
+   background: #ffffff;
+   height: 90vh;
+}
 /* media query */
 @media (max-width: 900px) {
    .height-400 {
@@ -249,6 +313,7 @@ nav {
 
    .hero-search {
       flex-direction: column;
+      width: 100%;
    }
    .hero .hero-search select {
       border-radius: 15px;
