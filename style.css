@@ -244,4 +244,29 @@ nav {
    .navbar-links.active {
       display: flex;
    }
+   /* hero  */
+
+   .hero-search {
+      flex-direction: column;
+   }
+   .hero .hero-search select {
+      border-radius: 15px;
+      padding: 25px 150px;
+      margin-bottom: 8px;
+      background-position-x: 340px;
+   }
+   .hero .hero-search .hero-input {
+      display: flex;
+      background-color: white;
+      border-radius: 15px;
+      border-radius: 15px;
+      border-left: 1px solid #ededed;
+   }
+   .hero .hero-search .hero-input input {
+      padding: 20px 38px;
+   }
+   .hero .hero-search .hero-input button {
+      border: none;
+      padding: 20px 30px;
+   }
 }
