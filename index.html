@@ -5,58 +5,71 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="stylesheet" href="./style.css" />
-      <title>Atova Tech</title>
+      <title>Atova technology</title>
    </head>
    <body>
-      <div class="navContainer">
-         <div class="wrapper">
-            <nav>
-               <a href="#" class="logo">
-                  <img src="./img/Atova-logo.png" alt="atova technology" />
-               </a>
-
-               <ul class="navItems">
-                  <li>
-                     <a href="#" class="active"
-                        >Home <img src="./icon/down-arrow.svg" alt=""
-                     /></a>
-                  </li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Course</a></li>
-                  <li><a href="#">Admission</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li>
-                     <a class="signInBtn" href="#">Sign In</a>
-                     <a class="signUpBtn" href="#">Sign Up</a>
-                  </li>
-               </ul>
-            </nav>
-         </div>
-      </div>
-      <div class="headerContainer">
-         <div class="wrapper">
-            <header>
-               <div class="heroContent">
-                  <h1>Learn On Your Schedule</h1>
-                  <p>
-                     It is a long established fact that a reader will be
-                     distracted by
-                  </p>
-               </div>
-               <div class="heroSearch">
-                  <select name="category" id="category">
-                     <option value="">Select Category</option>
-                     <option value="">Web Development</option>
-                  </select>
-                  <div class="inputGroup">
-                     <img src="./icon/search.svg" alt="" />
-                     <input type="text" placeholder="keyboard" />
-                     <button type="submit">Search</button>
+      <nav id="nav">
+         <div class="container navbar">
+            <a href="#" class="navbar-logo">
+               <img src="./img/Atova-logo.png" alt="atova technology" />
+            </a>
+            <a href="#" class="toggle-button">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+            </a>
+            <ul class="navbar-links">
+               <li>
+                  <div class="dropdown">
+                     <div class="dropbtn" onclick="toggleClass()">
+                        <a href="#" class="active"
+                           ><div class="dropbtn">Home</div>
+                           <img
+                              class="dropbtn arrow-icon"
+                              src="./icon/down-arrow.svg"
+                              alt=""
+                        /></a>
+                     </div>
+                     <div class="dropdown-content" id="dropdown">
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                     </div>
                   </div>
-               </div>
-            </header>
+               </li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Course</a></li>
+               <li><a href="#">Admission</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Services</a></li>
+               <li>
+                  <a class="navbar-btn signIn" href="#">Sign In</a>
+                  <a class="navbar-btn signUp" href="#">Sign Up</a>
+               </li>
+            </ul>
          </div>
-      </div>
+      </nav>
+      <header class="hero">
+         <div class="container">
+            <div class="hero-content">
+               <h1>Learn On Your Schedule</h1>
+               <p>
+                  It is a long established fact that a reader will be distracted
+                  by
+               </p>
+            </div>
+            <div class="hero-search">
+               <select name="category" id="category">
+                  <option value="">Select Category</option>
+                  <option value="">Web Development</option>
+               </select>
+               <div class="hero-input">
+                  <img src="./icon/search.svg" alt="" />
+                  <input type="text" placeholder="keyboard" />
+                  <button type="submit">Search</button>
+               </div>
+            </div>
+         </div>
+      </header>
+      <script src="./script.js"></script>
    </body>
 </html>
