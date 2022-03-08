@@ -11,8 +11,12 @@ const navbarLinks = document.getElementsByClassName("navbar-links")[0];
 const nav = document.getElementById("nav");
 
 toggleButton.addEventListener("click", () => {
+   console.log(nav);
+   console.log(navbarLinks);
+   console.log(toggleButton);
    navbarLinks.classList.toggle("active");
    nav.classList.toggle("height-400");
+   console.log("clicked");
 });
 
 // end menu
