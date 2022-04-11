@@ -306,6 +306,57 @@ body {
    margin: 0 -10px;
 }
 
+/* our facilities */
+
+.our-facilities {
+   height: 100vh;
+   background-color: white;
+   margin-top: 50px;
+}
+
+.our-facilities .facilities-head .head-container {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+.our-facilities .facilities-head .head-container .facilities-heading {
+   height: 37px;
+   color: #ff555a;
+   text-transform: uppercase;
+   font-family: "Roboto";
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   position: relative;
+   margin-bottom: 0px;
+}
+.our-facilities .facilities-head .head-container .facilities-heading::after {
+   border-bottom: 2px solid #c9c9c9;
+   border-radius: 2px;
+   bottom: -10px;
+   content: "";
+   height: 3px;
+   position: absolute;
+   width: 67px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.our-facilities .facilities-head .head-container .facilities-heading span {
+   color: #172d42;
+}
+.our-facilities .facilities-head .ellipse {
+   width: 20px;
+   height: 20px;
+}
+.our-facilities .facilities-head .polygon2 {
+   transform: rotate(45deg);
+   width: 20px;
+   height: 20px;
+}
+
 @media (max-width: 990px) {
    .nav-buttons {
       margin-left: 0;
