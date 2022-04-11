@@ -17,6 +17,7 @@
          crossorigin="anonymous"
          referrerpolicy="no-referrer"
       />
+
       <title>Atova Technology</title>
    </head>
    <body>
@@ -38,7 +39,7 @@
                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
                   <li class="nav-item dropdown">
                      <a
                         class="nav-link nav-active"
@@ -80,7 +81,7 @@
                      <a class="nav-link" href="#">Services</a>
                   </li>
                </ul>
-               <div class="d-flex ms-5">
+               <div class="d-flex justify-content-center ms-3 pb-2 nav-buttons">
                   <a class="nav-link btn btn-signin" href="#">Sign In</a>
                   <a class="nav-link btn btn-signup ms-3" href="#">Sign Up</a>
                </div>
@@ -92,7 +93,7 @@
       <div class="p-5 bg-img">
          <div class="container-fluid py-5">
             <h1 class="jumbotron-h1">Learn On Your Schedule</h1>
-            <p class="col-md-8 jumbotron-p">
+            <p class="col-xl-8 col-md-6 col-sm-10 jumbotron-p">
                It is a long established fact that a reader will be distracted by
             </p>
             <form action="#">
@@ -111,11 +112,14 @@
          </div>
       </div>
       <!-- jumbotron end -->
-      <section class="count-section">
-         <div class="items">
-            <div class="item">
-               <div class="icon-container">
-                  <div class="circle">
+
+      <section
+         class="count-section row d-flex justify-content-center align-items-center mt-sm-4"
+      >
+         <div class="col-xl-3 col-md-6 item p-sm-3">
+            <div class="row d-flex justify-content-center align-items-center">
+               <div class="icon-container col-xl-4 col-md-4 col-sm-2">
+                  <div class="circle pe-sm-3">
                      <img
                         class="icon"
                         src="./assets/icon/graduated 1.svg"
@@ -123,7 +127,7 @@
                      />
                   </div>
                </div>
-               <div class="content">
+               <div class="content col-xl-8 col-md-8 col-sm-10">
                   <p class="item-number">10,000</p>
                   <p class="item-heading">all students</p>
                   <p class="item-body">
@@ -131,9 +135,11 @@
                   </p>
                </div>
             </div>
-            <div class="item">
-               <div class="icon-container">
-                  <div class="circle">
+         </div>
+         <div class="col-xl-3 col-md-6 item p-sm-3">
+            <div class="row d-flex justify-content-center align-items-center">
+               <div class="icon-container col-xl-4 col-md-4 col-sm-2">
+                  <div class="circle pe-sm-3">
                      <img
                         class="icon"
                         src="./assets/icon/checked 1.svg"
@@ -141,7 +147,7 @@
                      />
                   </div>
                </div>
-               <div class="content">
+               <div class="content col-xl-8 col-md-8 col-sm-10">
                   <p class="item-number">5000+</p>
                   <p class="item-heading">success</p>
                   <p class="item-body">
@@ -149,9 +155,11 @@
                   </p>
                </div>
             </div>
-            <div class="item">
-               <div class="icon-container">
-                  <div class="circle">
+         </div>
+         <div class="col-xl-3 col-md-6 item p-sm-3">
+            <div class="row d-flex justify-content-center align-items-center">
+               <div class="icon-container col-xl-4 col-md-4 col-sm-2">
+                  <div class="circle pe-sm-3">
                      <img
                         class="icon"
                         src="./assets/icon/growth 2.svg"
@@ -159,7 +167,7 @@
                      />
                   </div>
                </div>
-               <div class="content">
+               <div class="content col-xl-8 col-md-8 col-sm-10">
                   <p class="item-number">6000+</p>
                   <p class="item-heading">industry</p>
                   <p class="item-body">
@@ -167,9 +175,11 @@
                   </p>
                </div>
             </div>
-            <div class="item">
-               <div class="icon-container">
-                  <div class="circle">
+         </div>
+         <div class="col-xl-3 col-md-6 item p-sm-3">
+            <div class="row d-flex justify-content-center align-items-center">
+               <div class="icon-container col-xl-4 col-md-4 col-sm-2">
+                  <div class="circle pe-sm-3">
                      <img
                         class="icon"
                         src="./assets/icon/rating (1) 1.svg"
@@ -177,7 +187,7 @@
                      />
                   </div>
                </div>
-               <div class="content">
+               <div class="content col-xl-8 col-md-8 col-sm-10">
                   <p class="item-number">8000</p>
                   <p class="item-heading">expert</p>
                   <p class="item-body">
@@ -187,8 +197,25 @@
             </div>
          </div>
       </section>
+
       <!-- end count section  -->
-      <section class="our-course"></section>
+      <!-- our course section --->
+
+      <section class="our-courses">
+         <div class="course-head">
+            <div class="head-container">
+               <img class="polygon1" src="./assets/icon/Polygon 4.svg" alt="" />
+               <div class="course-heading"><span>Our</span> Courses</div>
+               <img class="polygon2" src="./assets/icon/Polygon 4.svg" alt="" />
+            </div>
+         </div>
+      </section>
+      <!-- jquery -->
+      <script
+         src="https://code.jquery.com/jquery-3.6.0.min.js"
+         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+         crossorigin="anonymous"
+      ></script>
       <!-- Bootstrap Bundle with Popper -->
       <script src="./assets/js/bootstrap.bundle.js"></script>
 

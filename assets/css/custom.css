@@ -6,7 +6,11 @@ nav {
    background: #ffffff;
    font-family: "Montserrat", sans-serif;
 }
-
+.navbar {
+   padding-top: 0 !important;
+   padding-bottom: 0 !important;
+   min-height: 120px !important;
+}
 nav .navbar-logo {
    height: 120px;
 }
@@ -14,7 +18,8 @@ nav .navbar-logo {
    flex-grow: 0;
 }
 body {
-   background-color: black;
+   background-color: white;
+   color: black;
 }
 .nav-active {
    color: #ef3f24 !important;
@@ -36,9 +41,7 @@ body {
    color: #ffffff;
 }
 .btn-signup:hover {
-   color: #696968;
-   background-color: #ffffff;
-   border: 1px solid #ef3f24;
+   color: #ffff;
 }
 
 /* jumbotron */
@@ -126,31 +129,20 @@ body {
    border-radius: 10px;
 }
 /* count section */
-/* count section */
-
 .count-section {
-   position: absolute;
+   /* position: absolute;
    left: 50%;
    right: 50%;
-   transform: translate(-50%, -50%);
-   height: 135.32px;
+   transform: translate(-50%, -50%); */
+   /* height: 135px; */
+   min-height: 135px;
    width: 80%;
    margin: 0 auto;
-}
-.count-section .items {
-   display: flex;
-   padding: 8px;
    background: #ffffff;
    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
    border-radius: 10px;
 }
-.count-section .items .item {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin: 0 22px;
-}
-.count-section .items .item .icon-container .circle {
+.count-section .circle {
    background: #f1f1f1;
    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
    width: 76px;
@@ -158,15 +150,11 @@ body {
    border-radius: 50%;
    position: relative;
 }
-.count-section .items .item .icon-container .icon {
+.count-section .circle .icon {
    position: absolute;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-}
-.item .content {
-   align-items: flex-start;
-   margin-left: 15px;
 }
 .item-number {
    font-weight: 500;
@@ -186,28 +174,63 @@ body {
 .item-body {
    font-family: "Montserrat", sans-serif;
    font-size: 11px;
-   /* line-height: 13px; */
-   width: 126px;
+   line-height: 13px;
    color: #000000;
 }
+
+/* space */
+.white-space {
+   margin-top: 20px;
+   height: 100px;
+   background-color: #fff !important;
+}
 /* our course */
-.our-course {
-   height: 110vh;
+.our-courses {
+   padding-top: 1.5rem;
+   height: 100vh;
    background-color: white;
 }
-@media (max-width: 1300px) {
-   .count-section {
-      width: 60%;
-   }
-   .count-section .items {
-      flex-direction: column;
-   }
-   .count-section .items .item {
-      justify-content: flex-start;
-      margin: 30px;
-   }
-   .item-body {
-      max-width: 100%;
+
+.our-courses .course-head .head-container {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+.our-courses .course-head .head-container .course-heading {
+   height: 37px;
+   color: #ff555a;
+   text-transform: uppercase;
+   font-family: "Roboto";
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   position: relative;
+   margin-bottom: 0px;
+}
+.our-courses .course-head .head-container .course-heading::after {
+   border-bottom: 2px solid #c9c9c9;
+   border-radius: 2px;
+   bottom: -10px;
+   content: "";
+   height: 3px;
+   position: absolute;
+   width: 67px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.our-courses .course-head .head-container .course-heading span {
+   color: #172d42;
+}
+.our-courses .course-head .polygon1 {
+   transform: rotate(45deg);
+}
+
+@media (max-width: 990px) {
+   .nav-buttons {
+      margin-left: 0;
    }
 }
 @media (max-width: 800px) {
@@ -231,7 +254,7 @@ body {
       padding: 22px 103px;
    }
 }
-@media (max-width: 750px) {
+@media (max-width: 763px) {
    .jumbotron-search {
       flex-grow: 1;
    }
@@ -251,12 +274,34 @@ body {
       margin-bottom: 8px;
       background: #ffffff;
    }
-   .count-section {
-      width: 75%;
-   }
 }
 @media (max-width: 414px) {
    .jumbotron-search select {
       background-position-x: 220px;
+   }
+}
+@media (min-width: 1200px) {
+   .count-section {
+      position: absolute;
+      left: 50%;
+      right: 50%;
+      transform: translate(-50%, -50%);
+   }
+   .our-courses {
+      margin-top: 100px;
+   }
+}
+@media (max-width: 1199px) {
+   .count-section {
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+}
+@media (max-width: 640px) {
+   .count-section .content {
+      padding: 20px;
    }
 }
