@@ -130,13 +130,8 @@ body {
 }
 /* count section */
 .count-section {
-   /* position: absolute;
-   left: 50%;
-   right: 50%;
-   transform: translate(-50%, -50%); */
-   /* height: 135px; */
    min-height: 135px;
-   width: 80%;
+   width: 85%;
    margin: 0 auto;
    background: #ffffff;
    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
@@ -418,6 +413,116 @@ body {
    /* color: #000000; */
 }
 
+/* about and form section */
+.about-form {
+   width: 85%;
+   height: 100vh;
+   margin: auto;
+}
+.about-section {
+   /* height: 100%; */
+}
+.about-section .about-title {
+   font-family: "Roboto";
+   font-style: normal;
+   font-weight: 700;
+   font-size: 30px;
+   color: #172d42;
+   margin-bottom: 27px;
+}
+.about-section span {
+   color: #ff555a;
+}
+.about-section .about-content {
+   width: 450px;
+   height: auto;
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-size: 16px;
+   color: #172d42;
+}
+
+.about-section .about-button {
+   width: 133px;
+   height: 41px;
+   color: #ffffff;
+   background: #ff555a;
+   border-radius: 3px;
+   margin-bottom: 24px;
+}
+.about-section .about-video {
+   height: 262px;
+   background: linear-gradient(
+         to right,
+         rgba(1, 10, 20, 0.7),
+         rgba(1, 10, 20, 0.7)
+      ),
+      url(../img/about-bg.png), no-repeat;
+   border-radius: 5px;
+   position: relative;
+   background-position: center;
+   background-size: 100%;
+}
+
+.about-section .play-button {
+   width: 61px;
+   height: 61px;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.form-section {
+   background: linear-gradient(
+         to right,
+         rgba(23, 45, 66, 0.8),
+         rgba(23, 45, 66, 0.8)
+      ),
+      url(../img/form-bg.png), no-repeat;
+   border-radius: 6px;
+   background-position: center;
+   background-size: 100%;
+}
+.form-section .form-title {
+   font-family: "Montserrat";
+   font-weight: 700;
+   font-size: 30px;
+   color: #ff555a;
+   padding-top: 21px;
+   text-align: center;
+}
+
+.form-section .input-control {
+   min-width: 480px;
+   height: 60px;
+   padding: 10px;
+   margin: 10px 0;
+   background: #ffffff;
+   border: 1px solid #666666;
+   border-radius: 30px;
+}
+
+.form-section .input-control::placeholder {
+   font-family: "Montserrat";
+   font-weight: 500;
+   font-size: 15px;
+   color: #666666;
+   padding: 10px;
+}
+.form-section .form-button {
+   min-width: 480px;
+   height: 60px;
+   padding: 10px;
+   margin: 10px 0;
+   background: #ff555a;
+   border-radius: 5px;
+   border: none;
+   font-size: 30px;
+   color: #ffffff;
+   font-family: "Montserrat";
+   font-weight: 700;
+}
 @media (max-width: 990px) {
    .nav-buttons {
       margin-left: 0;
