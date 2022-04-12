@@ -187,7 +187,6 @@ body {
 /* our course */
 .our-courses {
    padding-top: 1.5rem;
-   height: 100vh;
    background-color: white;
 }
 
@@ -311,7 +310,6 @@ body {
 .our-facilities {
    height: 100vh;
    background-color: white;
-   margin-top: 50px;
 }
 
 .our-facilities .facilities-head .head-container {
