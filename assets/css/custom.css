@@ -639,6 +639,119 @@ a {
 .team-item:hover .social-icon i {
    color: #fff;
 }
+/* our review sec */
+
+.our-review .head-container {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+}
+.our-review .review-heading {
+   height: 37px;
+   color: #172d42;
+   text-transform: uppercase;
+   font-family: "Roboto";
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 35px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   position: relative;
+   margin-bottom: 0px;
+}
+.head-container .review-heading::after {
+   border-bottom: 2px solid #c9c9c9;
+   border-radius: 2px;
+   bottom: -10px;
+   content: "";
+   height: 3px;
+   position: absolute;
+   width: 67px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.head-container .review-heading span {
+   color: #ff555a;
+}
+.review-head .ellipse {
+   width: 20px;
+   height: 20px;
+}
+.review-head .polygon2 {
+   transform: rotate(45deg);
+   width: 20px;
+   height: 20px;
+}
+
+.review-body {
+   width: 80%;
+   margin: auto;
+   padding-top: 60px;
+   padding-bottom: 40px;
+}
+.review-body .review-item {
+   background: #ffffff;
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.review-body .review-item .review-img {
+   height: 110px;
+   width: 110px;
+   border-radius: 50%;
+   margin: 20px;
+}
+.top-section {
+   position: relative;
+}
+
+.top-section i {
+   display: inline-block;
+   border-radius: 60px;
+   box-shadow: 0 0 2px #ff555a, 0 0 2px #ff555a, 0 0 2px #ff555a,
+      0 0 2px #ff555a;
+   padding: 0.5em 0.6em;
+   color: #ff555a;
+   position: absolute;
+   top: 17%;
+   left: 4%;
+}
+.review-body .profile-name {
+   font-family: "Montserrat";
+   font-weight: 500;
+   font-size: 18px;
+   color: #ff555a;
+   margin: 10px 0;
+}
+.review-body .profile-title {
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-size: 10px;
+   line-height: 7px;
+   text-align: center;
+
+   color: #000000;
+   margin-bottom: 8px;
+}
+
+.review-body .profile-stars .star-icon {
+   width: 13px;
+   height: 13px;
+}
+.review-body .profile-content {
+   font-family: "Montserrat";
+   font-weight: 300;
+   font-size: 13px;
+   line-height: 16px;
+   text-align: center;
+   padding-bottom: 20px;
+   margin: 13px 36px;
+   color: #000000;
+}
+.our-review .slick-prev:before,
+.our-review .slick-next:before {
+   color: #ff555a !important;
+}
 
 @media (max-width: 990px) {
    .nav-buttons {
