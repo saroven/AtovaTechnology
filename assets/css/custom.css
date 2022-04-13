@@ -21,6 +21,10 @@ body {
    background-color: white;
    color: black;
 }
+a {
+   color: inherit;
+}
+
 .nav-active {
    color: #ef3f24 !important;
    font-weight: 500;
@@ -530,6 +534,112 @@ body {
    font-family: "Montserrat";
    font-weight: 700;
 }
+
+/* our team */
+.our-team {
+   background: #172d42;
+   height: auto;
+}
+
+.our-team .team-head .head-container {
+   width: 80%;
+   margin: auto;
+}
+.our-team .team-head .head-container .team-heading {
+   height: 37px;
+   color: #fff;
+   text-transform: uppercase;
+   font-family: "Roboto";
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 35px;
+   text-align: center;
+   letter-spacing: 0.02em;
+   position: relative;
+}
+.our-team .team-head .head-container .team-heading::after {
+   border-bottom: 2px solid #c9c9c9;
+   border-radius: 2px;
+   bottom: -40px;
+   content: "";
+   height: 3px;
+   position: absolute;
+   width: 67px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.our-team .team-head .head-container .team-heading span {
+   color: #ff555a;
+}
+.team-body {
+   width: 85%;
+   margin: auto;
+   padding-top: 60px;
+   padding-bottom: 40px;
+}
+.team-body .team-item {
+   background: #ffffff;
+   border: 1px solid #ff555a;
+   box-sizing: border-box;
+   box-shadow: 0px 8px 16px 5px rgba(114, 114, 114, 0.25);
+   border-radius: 10px;
+}
+.team-body .team-item .team-img {
+   height: 110px;
+   width: 110px;
+   border-radius: 50%;
+   margin: 20px;
+}
+.team-body .profile-name {
+   font-family: "Montserrat";
+   font-weight: 500;
+   font-size: 18px;
+   color: #ff555a;
+   margin: 10px 0;
+}
+.team-body .profile-title {
+   font-family: "Montserrat";
+   font-weight: 400;
+   font-size: 10px;
+   color: #666666;
+   margin-bottom: 8px;
+}
+.team-body .profile-content {
+   font-family: "Montserrat";
+   font-weight: 300;
+   font-size: 13px;
+   line-height: 16px;
+   text-align: center;
+   margin: 0 10px;
+   color: #000000;
+}
+
+.team-body .social-icon {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+.team-body .social-icon .icon i {
+   color: #ff555a;
+}
+
+.team-item:hover {
+   background-color: #ff555a;
+   transition: 300ms ease;
+}
+
+.team-item:hover .profile-name,
+.team-item:hover .profile-title {
+   color: #172d42;
+}
+.team-item:hover .profile-content,
+.team-item:hover .social-icon i {
+   color: #fff;
+}
+
 @media (max-width: 990px) {
    .nav-buttons {
       margin-left: 0;
