@@ -23,6 +23,10 @@ body {
 }
 a {
    color: inherit;
+   text-decoration: none;
+}
+a:hover {
+   color: inherit;
 }
 
 .nav-active {
@@ -802,6 +806,85 @@ a {
 .our-training .slick-prev:before,
 .our-training .slick-next:before {
    color: #ff555a !important;
+}
+
+/* footer section */
+.footer-section {
+   background: #172d42;
+   font-family: "Montserrat";
+   color: #ffffff;
+}
+.footer-section .footer-main {
+   padding: 10px 40px;
+}
+.footer-nav {
+   margin-top: 66px;
+}
+
+.information .slogan {
+   font-size: 18px;
+   margin-top: 20px;
+}
+.information .description {
+   font-size: 13px;
+   letter-spacing: 0.05em;
+   font-weight: 400;
+}
+.information .social-icon {
+   display: flex;
+}
+.information .social-icon .icon {
+   margin-left: 23px;
+   width: 40px;
+   height: 40px;
+   background: #ff555a;
+   border-radius: 50%;
+   position: relative;
+}
+.information .social-icon .icon:nth-child(1) {
+   margin-left: 0px;
+}
+.information .social-icon .icon i {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.footer-nav.navigation {
+   padding-left: 60px;
+}
+.footer-nav.our-course {
+   padding-left: 60px;
+}
+.footer-nav-title {
+   color: #ff555a;
+   font-size: 20px;
+   text-transform: capitalize;
+   letter-spacing: 0.1em;
+   font-weight: 700;
+}
+.footer-nav-list {
+   list-style: none;
+   padding-left: 0;
+}
+.footer-nav-list .nav-item {
+   margin: 20px 0;
+   font-size: 14px;
+}
+.footer-section .contact .nav-item {
+   display: flex;
+   align-items: center;
+   /* font-size: 13px; */
+}
+.footer-section .contact i {
+   color: #ff555a;
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+.footer-bottom {
+   border-top: 2px solid #ffffff;
+   padding: 10px 0;
 }
 @media (max-width: 990px) {
    .nav-buttons {
