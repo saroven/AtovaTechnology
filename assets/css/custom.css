@@ -796,6 +796,7 @@ a:hover {
 .training-body {
    width: 80%;
    margin: auto;
+   padding: 60px 0;
 }
 .training-body .training-item {
    background: #ffffff;
