@@ -753,6 +753,56 @@ a {
    color: #ff555a !important;
 }
 
+/* our training sec */
+
+.our-training {
+   margin-top: 20px;
+   background: url(../img/training-bg.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.our-training .training-heading {
+   height: 37px;
+   color: #172d42;
+   text-transform: uppercase;
+   font-family: "Roboto";
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 35px;
+   letter-spacing: 0.02em;
+   position: relative;
+   margin-bottom: 0px;
+}
+.head-container .training-heading::after {
+   border-bottom: 2px solid #c9c9c9;
+   border-radius: 2px;
+   bottom: -10px;
+   content: "";
+   height: 3px;
+   position: absolute;
+   width: 67px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+.head-container .training-heading span {
+   color: #ff555a;
+}
+
+.training-body {
+   width: 80%;
+   margin: auto;
+}
+.training-body .training-item {
+   background: #ffffff;
+   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+   height: 125px;
+}
+.our-training .slick-prev:before,
+.our-training .slick-next:before {
+   color: #ff555a !important;
+}
 @media (max-width: 990px) {
    .nav-buttons {
       margin-left: 0;
