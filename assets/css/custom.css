@@ -875,7 +875,6 @@ a:hover {
 .footer-section .contact .nav-item {
    display: flex;
    align-items: center;
-   /* font-size: 13px; */
 }
 .footer-section .contact i {
    color: #ff555a;
