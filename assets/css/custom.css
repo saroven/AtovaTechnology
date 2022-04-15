@@ -815,9 +815,7 @@ a:hover {
    font-family: "Montserrat";
    color: #ffffff;
 }
-.footer-section .footer-main {
-   /* padding: 10px 40px; */
-}
+
 .information .slogan {
    font-size: 18px;
    margin-top: 20px;
@@ -951,6 +949,12 @@ a:hover {
 @media (max-width: 640px) {
    .count-section .content {
       padding: 20px;
+   }
+   .footer-main {
+      padding: 10px 30px !important;
+   }
+   .footer-main .navigation {
+      padding-top: 25px !important;
    }
 }
 @media (max-width: 720px) {
