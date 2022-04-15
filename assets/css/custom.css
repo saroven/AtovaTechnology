@@ -816,12 +816,8 @@ a:hover {
    color: #ffffff;
 }
 .footer-section .footer-main {
-   padding: 10px 40px;
+   /* padding: 10px 40px; */
 }
-.footer-nav {
-   margin-top: 66px;
-}
-
 .information .slogan {
    font-size: 18px;
    margin-top: 20px;
@@ -850,12 +846,6 @@ a:hover {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-}
-.footer-nav.navigation {
-   padding-left: 60px;
-}
-.footer-nav.our-course {
-   padding-left: 60px;
 }
 .footer-nav-title {
    color: #ff555a;
